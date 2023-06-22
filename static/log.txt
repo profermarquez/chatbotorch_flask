@@ -1,0 +1,2 @@
+{"time":"2023-06-22 09:30:29.475745", "event":"error", "details":"No se entiende la pregunta", "value":"Me dice error 404"}
+{"time":"2023-06-22 09:31:08.366699", "event":"error", "details":"No se entiende la pregunta", "value":"mi mama es humana??"}
