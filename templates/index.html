@@ -113,7 +113,6 @@ const data = new function(){
                         // *** SAVE.
                         tr.appendChild(this.td);
                         var btSave = document.createElement('input');
-        
                         btSave.setAttribute('type', 'button');      // SET ATTRIBUTES.
                         btSave.setAttribute('value', 'Save');
                         btSave.setAttribute('id', 'Save' + i);
@@ -122,19 +121,18 @@ const data = new function(){
                         this.td.appendChild(btSave);
         
                         // *** UPDATE.
-                        tr.appendChild(this.td);
+                        /* tr.appendChild(this.td);
                         var btUpdate = document.createElement('input');
-        
                         btUpdate.setAttribute('type', 'button');    // SET ATTRIBUTES.
                         btUpdate.setAttribute('value', 'Update');
                         btUpdate.setAttribute('id', 'Edit' + i);
                         btUpdate.setAttribute('disabled','true') 
                         btUpdate.setAttribute('style', 'background-color:#44CCEB;');
                         btUpdate.setAttribute('onclick', 'Update(this)');   // ADD THE BUTTON's 'onclick' EVENT.
-                        this.td.appendChild(btUpdate);
+                        this.td.appendChild(btUpdate); */
         
                         // *** DELETE.
-                        this.td = document.createElement('th');
+                        /* this.td = document.createElement('th');
                         tr.appendChild(this.td);
                         var btDelete = document.createElement('input');
                         btDelete.setAttribute('type', 'button');    // SET INPUT ATTRIBUTE.
@@ -142,7 +140,7 @@ const data = new function(){
                         btDelete.setAttribute('disabled','true') ;
                         btDelete.setAttribute('style', 'background-color:#ED5650;');
                         btDelete.setAttribute('onclick', 'Delete(this)');   // ADD THE BUTTON's 'onclick' EVENT.
-                        this.td.appendChild(btDelete);
+                        this.td.appendChild(btDelete); */
                     }
 
                     this.td = document.createElement('td');

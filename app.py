@@ -18,7 +18,8 @@ if __name__ == "__main__":
 @app.route('/')
 @cross_origin()
 def index():
-    return jsonify({'ip': request.remote_addr}), 200
+    #return jsonify({'ip': request.remote_addr}), 200
+    return "<p><a href=""/chat"">Chat</a></p> <p><a href=""/backend"">Backend</a></p>"
 
 @app.route('/train')
 @cross_origin()
@@ -34,7 +35,7 @@ def train():
     
     return "train"
 
-@app.route('/frontend')
+@app.route('/backend')
 @cross_origin()
 def projects():
     return render_template("index.html", title = 'Frontend')
