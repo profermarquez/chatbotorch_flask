@@ -3,7 +3,7 @@
 https://gradio.app/
 
 # Paso 1: Descargar el repositorio
-https://github.com/profermarquez/profermarquez/chatbotorch
+https://github.com/profermarquez/profermarquez/chatbotorch_gradio
 
 # Paso 2 crear e iniciar el entornovirtual
 virtualenv env 
