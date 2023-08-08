@@ -1,4 +1,5 @@
 nltk
+gradio
 numpy
 torch
 Flask
