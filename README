@@ -1,36 +1,20 @@
 
-# Paso 1: crear el entorno virtual
-virtualenv env
-
 # Ejemplos del chat:
 https://gradio.app/
 
-# Requisitos chat
-import nltk
-nltk.download('spanish_grammars')
+# Paso 1: Descargar el repositorio
+https://github.com/profermarquez/profermarquez/chatbotorch_gradio
 
-
-# Paso 2 iniciar el repositorio
+# Paso 2 crear e iniciar el entornovirtual
+virtualenv env 
 Ingresar dentro de la carpeta env/Scrips y ejecutar el archivo activate.bat
 
-# Paso 4: Descargar el repositorio
-https://github.com/profermarquez/profermarquez/chatbotorch
-
-# Paso 5: Instalar las dependencias 
+# Paso 3: Instalar las dependencias 
 
 pip install gradio
 pip install nltk
 pip install numpy
 pip install torch
-
-# Paso 6: Modificar el archivo intents.json, cuidado de no romper la estructura
-
-# Paso 7: Entrenar 
-py train.py
-
-# Paso 8: Ejecutar para iniciar el chat en http://127.0.0.1:7860
-py chat.py
-
 
 # Requisitos para el Backend
 pip install Flask
@@ -39,8 +23,26 @@ pip install Flask-SQLAlchemy
 pip install SQLAlchemy
 pip install flask-socketio
 
-# Ejecutar
+o ejecutar en el directorio raiz: pip install -r requirements.txt
+
+# Paso 4: Requisitos chatbot
+import nltk
+nltk.download('punkt')
+
+# Paso 5: Ejecutar
 flask --app app run
+Eso levanta el 
+
+# Paso 6: Modificar el archivo intents.json, cuidado de no romper la estructura, si se rompe compiar de nuevo de la estructura original.
+# backend
+127.0.0.1:5000/backend
+
+# Paso 7: Luego de cargar las nuevas preguntas y respuestas, entrenar 
+/static/py train.py
+
+# Paso 8: Ejecutar para iniciar el chat en http://127.0.0.1:7860
+/static/py chat.py
+
 
 
 
