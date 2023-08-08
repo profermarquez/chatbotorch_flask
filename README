@@ -10,6 +10,7 @@ Ingresar dentro de la carpeta env/Scrips y ejecutar el archivo activate.bat
 
 pip install nltk
 pip install numpy
+pip install gradio #tengo que sacar 
 pip install torch
 pip install Flask
 pip install flask-cors
