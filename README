@@ -19,18 +19,14 @@ pip install flask-socketio
 
 o ejecutar en el directorio raiz: pip install -r requirements.txt
 
-# Paso 4: Requisitos chatbot
-import nltk
-nltk.download('punkt')
-
-# Paso 5: Ejecutar en el directorio raiz del proyecto
+# Paso 4: Ejecutar en el directorio raiz del proyecto
 flask --app app run
 Eso levanta el 
 
-# Paso 6: Ingresar al backend, donde se puede,c argar las nuevas preguntas y respuestas, entrenar 
+# Paso 5: Ingresar al backend, donde se puede,c argar las nuevas preguntas y respuestas, entrenar 
 127.0.0.1:5000/
 
-# Paso 7: Chatear
+# Paso 6: Chatear
 127.0.0.1:5000/chat
 
 
