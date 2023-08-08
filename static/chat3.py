@@ -76,7 +76,15 @@ def getRespuestaIA(texto):
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     #print("Probabilidad: ",prob.item())
-    if prob.item() > 0.30:
+    if prob.item() > 0.75:
+        for intent in intents['intents']:
+            #print(intent["tag"]," == ",tag)
+
+            if tag == intent["tag"]:
+                return(f"{bot_name}: {random.choice(intent['responses'])}")
+            else:
+                pass
+    if prob.item() > 0.25:
         for intent in intents['intents']:
             #print(intent["tag"]," == ",tag)
 

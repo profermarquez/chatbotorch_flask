@@ -1,7 +1,8 @@
-gradio
 nltk
 numpy
 torch
-virtualenv
 Flask
 flask-cors
+Flask-SQLAlchemy
+SQLAlchemy
+flask-socketio
