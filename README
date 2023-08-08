@@ -35,6 +35,9 @@ py chat.py
 # Requisitos para el Backend
 pip install Flask
 pip install flask-cors
+pip install Flask-SQLAlchemy
+pip install SQLAlchemy
+pip install flask-socketio
 
 # Ejecutar
 flask --app app run

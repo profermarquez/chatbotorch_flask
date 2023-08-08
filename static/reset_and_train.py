@@ -1,3 +1,4 @@
+
 import numpy as np
 import random
 import ast
@@ -19,23 +20,23 @@ def product_row_to_dict(i):
 try:
     conn=sqlite3.connect('intents.db')
     c = conn.cursor()
-    """ c.execute('''
+    c.execute('''
                 DROP TABLE IF EXISTS intents
           ''')
-    conn.commit() """
+    conn.commit()
     #codigo para resetear la tabla
     c.execute('''
           CREATE TABLE IF NOT EXISTS intents
           ([intents_id] INTEGER PRIMARY KEY, [tag] TEXT,[patterns] TEXT,[responses] TEXT)
           ''')
     conn.commit()
-    """ c.execute('''
+    c.execute('''
           INSERT INTO intents VALUES (1,"Hola","Hola","Hola!")
           ''')
     c.execute('''
           INSERT INTO intents VALUES (2,"Hello","Hello","Hi!")
           ''')
-    conn.commit() """
+    conn.commit()
     c.execute('''SELECT *
               
                FROM intents'''
