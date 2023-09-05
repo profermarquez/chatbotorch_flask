@@ -6,14 +6,14 @@
           $( "#target" ).on( "click", function() {
                     $.get( "http://127.0.0.1:5000/train", function( data ) {
                                   /*  $( ".result" ).html( data ); */
-                                  console.log('train');
+                                  alert('Entrenado!');
                                   location.reload();
                             });
                     } );
           $( "#target2" ).on( "click", function() {
                     $.get( "http://127.0.0.1:5000/resetandtrain", function( data ) {
                                   /*  $( ".result" ).html( data ); */
-                                  console.log('reset y train');
+                                  alert('Reseteado y entrenado!');
                                   location.reload();
                             });
                     } );
